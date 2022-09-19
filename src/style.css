@@ -15,6 +15,7 @@ body{
 
 .nav-list{
     padding:1rem 0;
+    color: wheat;
     font-size: 1.4rem;
     margin: 0;
     list-style: none;
@@ -55,4 +56,26 @@ footer{
     font-size: 1.2rem;
     color: white;
     padding: 1rem 0;
+}
+
+
+/**MENU**/
+.banner-menu{
+    height: 250px;
+    background:rgba(0,0,0,.50) url(./banner.jpg) ;
+    background-size: cover;
+    background-blend-mode: darken;   
+}
+
+.dishes{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: azure;
+    justify-content: space-between;
+}
+
+.image-dish{
+    background-color: violet;
+    height: 300px;
+    width: 450px;
 }
