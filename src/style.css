@@ -11,6 +11,7 @@ body{
 #content{
     background-color: brown;
     color: wheat;
+    min-height: 95vh;
 }
 
 .nav-list{
@@ -19,9 +20,21 @@ body{
     font-size: 1.4rem;
     margin: 0;
     list-style: none;
-
+    height: 2rem;
     display: flex;
     justify-content: space-around;
+}
+
+.home:hover{
+    border-bottom: 2px solid wheat;
+}
+
+.menu:hover{
+    border-bottom: 2px solid wheat;
+}
+
+.contact:hover{
+    border-bottom: 2px solid wheat;
 }
 
 .header{
@@ -52,10 +65,12 @@ body{
 
 footer{
     text-align: center;
-    background-color: grey;
+    background-color: rgb(129, 38, 38);
     font-size: 1.2rem;
     color: white;
     padding: 1rem 0;
+    
+    position: relative;
 }
 
 
@@ -70,12 +85,40 @@ footer{
 .dishes{
     display: flex;
     flex-wrap: wrap;
-    background-color: azure;
     justify-content: space-between;
+    text-align: center;
+    font-size: 1.6rem;
 }
 
 .image-dish{
-    background-color: violet;
     height: 300px;
     width: 450px;
+}
+
+.image-1{
+    background: url(nachos.jpg);
+    background-size: cover;
+}
+
+.image-2{
+    background: url(tacos.jpg);
+    background-size: cover;
+}
+
+.image-3{
+    background: url(pozole.jpg);
+    background-size: cover;
+}
+
+.image-4{
+    background: url(tamales.jpg);
+    background-size: cover;
+}
+
+/*Contact*/
+
+.para-contact{
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem;
 }

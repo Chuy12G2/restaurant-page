@@ -1,11 +1,13 @@
+
 export default function loadMenu(){
+
     const content = document.getElementById("content");
 
-    const nav = document.createElement("nav");
+    /* const nav = document.createElement("nav");
     const list = document.createElement("ul");
     const li1 = document.createElement("li");
     const li2 = document.createElement("li");
-    const li3 = document.createElement("li"); 
+    const li3 = document.createElement("li");  */
     const header = document.createElement("h1");
     const banner = document.createElement("div");
     const dishes = document.createElement("div");
@@ -25,6 +27,12 @@ export default function loadMenu(){
     const dish4 = document.createElement("div");
     const imageDish4 = document.createElement("div");
     const paraDish4 = document.createElement("p");
+
+    imageDish1.classList.add("image-1");
+    imageDish2.classList.add("image-2");
+    imageDish3.classList.add("image-3");
+    imageDish4.classList.add("image-4");
+    
 
     dish1.appendChild(imageDish1);
     dish1.appendChild(paraDish1);
@@ -46,27 +54,27 @@ export default function loadMenu(){
     imageDish3.classList.add("image-dish");
     imageDish4.classList.add("image-dish");
 
-    list.classList.add("nav-list"); 
+    /* list.classList.add("nav-list");  */
     header.classList.add("header")
     banner.classList.add("banner-menu");
     dishes.classList.add("dishes");
 
-    paraDish1.textContent = "dish1";
-    paraDish2.textContent = "dish1";
-    paraDish3.textContent = "dish1";
-    paraDish4.textContent = "dish1";
+    paraDish1.textContent = "Nachos";
+    paraDish2.textContent = "Tacos al pastor";
+    paraDish3.textContent = "Pozole";
+    paraDish4.textContent = "Tamales";
 
-    li1.textContent = "Home";
+    /* li1.textContent = "Home";
     li2.textContent = "Menu";
     li3.textContent = "Contact"; 
-
+ */
     header.textContent = "Menu";
     
-    content.appendChild(nav);
+    /* content.appendChild(nav);
     nav.appendChild(list);
     list.appendChild(li1);
     list.appendChild(li2);
-    list.appendChild(li3);   
+    list.appendChild(li3); */   
 
     content.appendChild(banner);
     content.appendChild(header);
